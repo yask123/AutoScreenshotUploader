@@ -17,7 +17,7 @@ filename=datetime.now().strftime('%Y-%m-%d%H:%M:%S')
 t=filename+'.png'
 
 print t
-os.system('screencapture '+t)
+os.system('screencapture -i '+t)
 fileadd=os.getcwd()+'/'+t
 
 fh = open(fileadd, 'rb');
