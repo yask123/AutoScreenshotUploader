@@ -18,3 +18,5 @@ Let it do all for you:
 * copies the url into clipboard 
 * deletes the created image file from your desktop
 
+[Demo]: http://g.recordit.co/BrBF1Euapr.gif "Demo"
+
