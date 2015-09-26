@@ -20,3 +20,7 @@ Let it do all for you:
 
 [Demo]: http://g.recordit.co/BrBF1Euapr.gif "Demo"
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/yask123/autoscreenshotuploader/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
