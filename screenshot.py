@@ -2,7 +2,6 @@ import base64
 import requests
 import os
 from datetime import datetime
-import os
 import webbrowser
 os.getcwd()
 
@@ -11,21 +10,20 @@ url = "http://api.imgur.com/2/upload.json"
 
 os.system('')
 
-filename=datetime.now().strftime('%Y-%m-%d%H:%M:%S')
+filename = datetime.now().strftime('%Y-%m-%d%H:%M:%S')
 
 
-t=filename+'.png'
+t = filename + '.png'
 
 print t
-os.system('screencapture -i '+t)
-fileadd=os.getcwd()+'/'+t
+os.system('screencapture -i ' + t)
+fileadd = os.getcwd() + '/' + t
 
-fh = open(fileadd, 'rb');
+fh = open(fileadd, 'rb')
 base64img = base64.b64encode(fh.read())
-r = requests.post(url, data={'key': api_key, 'image':base64img})
-print (r.json()['upload']['links']['original'])
+r = requests.post(url, data={'key': api_key, 'image': base64img})
+print(r.json()['upload']['links']['original'])
 link = r.json()['upload']['links']['original']
 
 os.system("echo '%s' | pbcopy" % link)
 webbrowser.open(link)
-
