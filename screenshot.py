@@ -5,7 +5,7 @@ from datetime import datetime
 import webbrowser
 os.getcwd()
 
-api_key = "Get Your OWN API KEY!!! :P "
+api_key = "4adaaf1bd8caec42a5b007405e829eb0"
 url = "http://api.imgur.com/2/upload.json"
 
 os.system('')
